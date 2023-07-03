@@ -9,8 +9,8 @@ import com.example.tokoalatmusik.model.Goods
 import kotlinx.coroutines.flow.Flow
 
 @Dao
-interface goodsDao {
-@Query("SELECT * FROM `goods_table` ORDER BY name ASC")
+interface GoodsDao {
+@Query("SELECT * FROM goods_table ORDER BY name ASC")
         fun getALLGoods(): Flow<List<Goods>>
 
         @Insert
